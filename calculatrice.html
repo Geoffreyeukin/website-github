@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatrice</title>
+    <link rel="stylesheet" href="calculatrice.css">
+    <link rel="stylesheet" href="calculatrice.js">
+</head>
+<script>
+    function ajouter_un(){
+        var x=1;
+        
+        document.querySelector('#espace').value+=x; 
+     
+    }
+        </script>
+        <script>
+            function ajouter_deux(){
+                var a=2;
+        document.querySelector('#espace').value+=a; 
+
+            }
+        </script><script>
+            function ajouter_trois(){
+                var a=3;
+        document.querySelector('#espace').value+=a; 
+
+            }
+        </script>
+        <script>
+            function ajouter_quatre(){
+                var a=4;
+        document.querySelector('#espace').value+=a; 
+
+            }
+        </script>
+        <script>
+            function ajouter_cinq(){
+                var a=5;
+        document.querySelector('#espace').value+=a; 
+
+            }
+        </script>
+        <script>
+            function ajouter_six(){
+                var a=6;
+        document.querySelector('#espace').value+=a; 
+
+            }
+        </script>
+        <script>
+            function ajouter_sept(){
+                var a=7;
+        document.querySelector('#espace').value+=a; 
+
+            }
+        </script>
+        <script>
+            function ajouter_huit(){
+                var a=8;
+        document.querySelector('#espace').value+=a;
+         
+
+            }
+        </script>
+        <script>
+            function ajouter_neuf(){
+                var a=9;
+        document.querySelector('#espace').value+=a; 
+
+            }
+        </script>
+        <script>
+            
+            function ajouter_plus(){
+               var r=document.getElementById('espace').value;
+                   r=parseInt(r);
+                   document.querySelector('#second_aide').value=r;
+                   document.querySelector('#espace').value="+";
+                   document.querySelector('#aide').value="                +";
+
+                  }
+      
+        
+        </script>
+<script>
+    function ajouter_moins(){
+        var r=document.getElementById('espace').value;
+        r=parseInt(r);
+               document.querySelector('#espace').value="";
+               document.querySelector('#second_aide').value=r;
+               document.querySelector('#aide').value="                -";
+    }
+    
+</script>
+<script>
+    function ajouter_multiplier(){
+        var r=document.getElementById('espace').value;
+        r=parseInt(r);
+               document.querySelector('#espace').value="";
+               document.querySelector('#second_aide').value=r;
+               document.querySelector('#aide').value="                x";
+    }
+</script>
+<script>
+
+    function ajouter_diviser(){
+        var r=document.getElementById('espace').value;
+        r=parseInt(r);
+               document.querySelector('#espace').value="";
+               document.querySelector('#second_aide').value=r;
+               document.querySelector('#aide').value="                /";
+    }
+</script>
+<script>
+    function ajouter_egal(){
+           var final, nombre1,nombre2,solution;
+           nombre1=document.querySelector('#espace').value;
+           nombre2=document.querySelector('#second_aide').value;
+           nombre1=parseInt(nombre1);
+           nombre2=parseInt(nombre2);
+           final=document.querySelector('#aide').value;
+           document.querySelector('#espace').value="";
+           if(final=="                +"){
+              solution=nombre1+nombre2;
+              document.querySelector('#aide').value+=nombre1;
+              document.querySelector('#espace').value=solution;
+
+           }else if (final=="                -") {
+            solution=nombre2-nombre1;
+            document.querySelector('#aide').value+=nombre1;
+              document.querySelector('#espace').value=solution;
+              }else if (final=="                x") {
+            solution=nombre2*nombre1;
+            document.querySelector('#aide').value+=nombre1;
+              document.querySelector('#espace').value=solution;
+              }
+                  else{
+            solution=nombre2/nombre1;
+              document.querySelector('#aide').value+="  "+nombre1;
+              document.querySelector('#espace').value=solution;
+           } 
+    }
+</script>
+<script>
+    function reinitialiser(){
+        document.querySelector('#espace').value="";
+               document.querySelector('#second_aide').value="";
+               document.querySelector('#aide').value="";
+    }
+</script>
+
+
+
+
+<body>
+    <header>
+        <h1>calculatrice</h1>
+    </header>
+ <nav>
+ <div id="number">
+        <input id="second_aide" type="number">
+        <input id="aide" type="text" value="">
+        <input id="espace" type="number" name="champs_d'entree" value="">
+        <div id="nombre">
+            <div id="sept">
+                <button onclick="ajouter_sept();">7</button>
+            </div>
+            <div id="huit">
+                <button onclick="ajouter_huit();">8</button>
+            </div>
+            <div id="neuf">
+                <button onclick="ajouter_neuf();">9</button>
+            </div>
+            <div>
+                <button onclick="ajouter_diviser();">/</button>
+            </div>
+            
+            <div id="quatre">
+            <button onclick="ajouter_quatre();">4</button>
+        </div>
+        <div id="cinq">
+            <button onclick="ajouter_cinq();">5</button>
+        </div>
+        <div id="six">
+            <button onclick="ajouter_six();">6</button>
+        </div>
+        <div>
+            <button onclick="ajouter_multiplier();">x</button>
+        </div>
+    
+        <div id="une">
+            <button onclick="ajouter_un();">1</button>
+        </div>
+        <div id="deux">
+            <button onclick="ajouter_deux();">2</button>
+        </div>
+        <div id="trois" >
+            <button onclick="ajouter_trois();">3</button>
+        </div>
+        <div>
+            <button onclick="ajouter_moins();">-</button>
+        </div>
+        
+        <div>
+            <button onclick="ajouter_zero();">0</button>
+        </div>
+    <div><button onclick="reinitialiser();">ac</button></div>
+        <div>
+        <button onclick="ajouter_egal();">=</button>
+    </div>
+    <div>
+        <button onclick="ajouter_plus();">+</button>
+    </div>
+    
+</div>
+</nav>
+    
+    </div>
+</body>
+</html>

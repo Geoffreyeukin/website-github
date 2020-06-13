@@ -1,0 +1,67 @@
+body{
+    text-align:center;
+    width: 49%;
+    height: 1000px;
+    background-color:blue;
+    }
+    #number{text-align: center;
+        background-color: black;
+        color: white;
+        width: 50%;
+        height:100%;
+        display:inline-block ;
+    
+    }
+    #nombre{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        
+    
+    }
+    #second_aide
+    {
+        background-color: black;
+        color: white;
+        width:52%;
+        float: left;
+        border-collapse: collapse;
+    border: none;
+    text-align: right;
+    
+    }
+    #aide{
+        background-color: black;
+        color: white;
+        border: none;
+        text-align:left;
+        width:48%;
+    }
+    #espace{background-color: black ;
+        border: none;
+        
+        width: 99%;
+        color: white;
+    }
+    button{
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    div{
+        width:25%;
+        height:40px;
+        }
+    #gauche{
+        width: 225px;
+        
+        background-color: red;
+    }
+    input{
+        height:30px;
+        
+    }
